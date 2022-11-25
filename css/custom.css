@@ -1,0 +1,69 @@
+/* ҳ����ͷͼ͸�� */
+#footer {
+    background: transparent !important;
+}
+
+#page-header {
+    background: transparent !important;
+}
+
+/* ����ģʽ����͸�� */
+#footer::before {
+    background: transparent !important;
+}
+
+#page-header::before {
+    background: transparent !important;
+}
+
+/* ҹ��ģʽ����͸�� */
+[data-theme="dark"] #footer::before {
+    background: transparent !important;
+}
+
+[data-theme="dark"] #page-header::before {
+    background: transparent !important;
+}
+
+
+
+
+/* ��ҳ��ť���� */
+#pagination {
+    width: 100%;
+    margin: auto;
+}
+
+
+
+
+/* һ���˵����� */
+#nav .menus_items {
+    position: absolute !important;
+    width: fit-content !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+}
+    /* �Ӳ˵�����չʾ */
+    #nav .menus_items .menus_item:hover .menus_item_child {
+        display: flex !important;
+    }
+/* �����2�Ǵ����������ĵ�2��Ԫ�أ������Ӳ˵���Ԫ�أ����԰��Լ������޸� */
+.menus_items .menus_item:nth-child(5) .menus_item_child {
+    /*�����б�λ�ÿ��Ը��������ֵ*/
+    left: -30px;
+}
+
+
+
+
+/* ҹ��ģʽ�˵��������� */
+[data-theme="dark"] #nav .site-page,
+[data-theme="dark"] #nav .menus_items .menus_item .menus_item_child li a {
+    text-shadow: 0 0 2px var(--theme-color) !important;
+}
+
+/* �ֻ������� */
+[data-theme="dark"] #sidebar #sidebar-menus .menus_items .site-page {
+    text-shadow: 0 0 2px var(--theme-color) !important;
+}
